@@ -23,38 +23,38 @@ public class Two {
 
     public static int getMaxNumb(int oneNumb, int twoNumb, int threeNumb, int fourNumb){
         // Возвращает максимальное число
-        int max_numb;
+        int maxNumb;
 
         if (oneNumb >= twoNumb && oneNumb >= threeNumb && oneNumb >= fourNumb) {
-            max_numb = oneNumb;
+            maxNumb = oneNumb;
         } else if (twoNumb >= oneNumb && twoNumb >= threeNumb && twoNumb >= fourNumb) {
-            max_numb = twoNumb;
+            maxNumb = twoNumb;
         } else if (threeNumb >= oneNumb && threeNumb >= twoNumb && threeNumb >= fourNumb) {
-            max_numb = threeNumb;
+            maxNumb = threeNumb;
         } else {
-            max_numb = fourNumb;
+            maxNumb = fourNumb;
         }
 
-        return max_numb;
+        return maxNumb;
     }
 
 
-    public static int getCountOfMaxNumb(int max_numb, int oneNumb, int twoNumb, int threeNumb, int fourNumb){
+    public static int getCountOfMaxNumb(int maxNumb, int oneNumb, int twoNumb, int threeNumb, int fourNumb){
         // Возвращает количество максимальных чисел (сколько раз максимальное число повторилось)
-        // max_numb: int - Максимальное число
+        // maxNumb: int - Максимальное число
         // oneNumb, ... : int - Перечисление чисел
 
-        byte count_of_max = 0;
+        byte countOfMax = 0;
 
-        if (max_numb == oneNumb)
-            count_of_max ++;
-        if (max_numb == twoNumb)
-            count_of_max ++;
-        if (max_numb == threeNumb)
-            count_of_max ++;
-        if (max_numb == fourNumb)
-            count_of_max ++;
+        if (maxNumb == oneNumb)
+            countOfMax ++;
+        if (maxNumb == twoNumb)
+            countOfMax ++;
+        if (maxNumb == threeNumb)
+            countOfMax ++;
+        if (maxNumb == fourNumb)
+            countOfMax ++;
 
-        return count_of_max;
+        return countOfMax;
     }
 }
