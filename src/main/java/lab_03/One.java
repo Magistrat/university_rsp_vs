@@ -6,7 +6,14 @@ public class One {
         // 1. Создайте массив, содержащий 10 первых нечетных чисел.
         // Выведете элементы массива на консоль в одну строку, разделяя запятой.
 
-        int[] firstOddNumbers = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
+        int lengthArray = 10;
+        int[] firstOddNumbers = new int[lengthArray];
+
+        int j = 0;
+        while (j < lengthArray){
+            firstOddNumbers[j] = 1 + (j * 2);
+            j++;
+        }
 
         for (int i = 0; i < firstOddNumbers.length; i++){
             if (i == 0){
