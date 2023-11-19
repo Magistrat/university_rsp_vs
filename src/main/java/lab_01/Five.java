@@ -5,7 +5,7 @@ public class Five {
 
         // 5. Дано число месяца (тип int). Необходимо определить время года (зима, весна, лето, осень) и вывести на консоль.
 
-        int monthNumb = 11;
+        final int monthNumb = 11;
         System.out.println(
                 "Месяц с номером " + monthNumb + ": " + getYearSeasonByNumbOfMonth(monthNumb)
         );
