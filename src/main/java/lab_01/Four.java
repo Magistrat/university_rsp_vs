@@ -2,6 +2,8 @@ package lab_01;
 
 public class Four {
     public static void main(String[] args) {
+        // 4. Даны имена 2-х человек (тип String). Если имена равны, то вывести сообщение о том, что люди являются тезками.
+
         System.out.println(
                 "Костя и Костя: " + isNameSake("Костя", "Костя")
         );
