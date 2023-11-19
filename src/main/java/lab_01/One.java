@@ -1,6 +1,6 @@
 package lab_01;
 
-public class First {
+public class One {
     public static void main(String[] args) {
 
         int one_numb = 2;
