@@ -10,25 +10,25 @@ public class One {
         int threeNumb = 8;
         int fourNumb = 15;
 
-        int minimal_numb;
-        minimal_numb = getMinimalNumb(oneNumb, twoNumb, threeNumb, fourNumb);
-        System.out.println(minimal_numb);
+        int minimalNumb;
+        minimalNumb = getMinimalNumb(oneNumb, twoNumb, threeNumb, fourNumb);
+        System.out.println(minimalNumb);
     }
 
     public static int getMinimalNumb(int oneNumb, int twoNumb, int threeNumb, int fourNumb){
         // Возвращает минимальное число
-        int minimal_numb;
+        int minimalNumb;
 
         if (oneNumb <= twoNumb && oneNumb <= threeNumb && oneNumb <= fourNumb) {
-            minimal_numb = oneNumb;
+            minimalNumb = oneNumb;
         } else if (twoNumb <= oneNumb && twoNumb <= threeNumb && twoNumb <= fourNumb) {
-            minimal_numb = twoNumb;
+            minimalNumb = twoNumb;
         } else if (threeNumb <= oneNumb && threeNumb <= twoNumb && threeNumb <= fourNumb) {
-            minimal_numb = threeNumb;
+            minimalNumb = threeNumb;
         } else {
-            minimal_numb = fourNumb;
+            minimalNumb = fourNumb;
         }
 
-        return minimal_numb;
+        return minimalNumb;
     }
 }
