@@ -20,17 +20,18 @@ public class Three {
 
     public static int getMaxOfFiveNumb(int oneNumb, int twoNumb, int threeNumb, int fourNumb, int fiveNumb) {
         // Возвращает максимальное число
-        int maxNumb;
+        int maxNumb = oneNumb;
 
-        if (oneNumb >= twoNumb && oneNumb >= threeNumb && oneNumb >= fourNumb && oneNumb >= fiveNumb) {
-            maxNumb = oneNumb;
-        } else if (twoNumb >= oneNumb && twoNumb >= threeNumb && twoNumb >= fourNumb && twoNumb >= fiveNumb) {
+        if (twoNumb > maxNumb) {
             maxNumb = twoNumb;
-        } else if (threeNumb >= oneNumb && threeNumb >= twoNumb && threeNumb >= fourNumb && threeNumb >= fiveNumb) {
+        }
+        if (threeNumb > maxNumb) {
             maxNumb = threeNumb;
-        } else if (fourNumb >= oneNumb && fourNumb >= twoNumb && fourNumb >= threeNumb && fourNumb >= fiveNumb) {
+        }
+        if (fourNumb > maxNumb) {
             maxNumb = fourNumb;
-        } else {
+        }
+        if (fiveNumb > maxNumb) {
             maxNumb = fiveNumb;
         }
 
@@ -40,17 +41,18 @@ public class Three {
 
     public static int getMinimalOfFiveNumb(int oneNumb, int twoNumb, int threeNumb, int fourNumb, int fiveNumb) {
         // Возвращает минимальное число
-        int minimalNumb;
+        int minimalNumb = oneNumb;
 
-        if (oneNumb <= twoNumb && oneNumb <= threeNumb && oneNumb <= fourNumb && oneNumb <= fiveNumb) {
-            minimalNumb = oneNumb;
-        } else if (twoNumb <= oneNumb && twoNumb <= threeNumb && twoNumb <= fourNumb && twoNumb <= fiveNumb) {
+        if (twoNumb < minimalNumb) {
             minimalNumb = twoNumb;
-        } else if (threeNumb <= oneNumb && threeNumb <= twoNumb && threeNumb <= fourNumb && threeNumb <= fiveNumb) {
+        }
+        if (threeNumb < minimalNumb) {
             minimalNumb = threeNumb;
-        } else if (fourNumb <= oneNumb && fourNumb <= twoNumb && fourNumb <= threeNumb && fourNumb <= fiveNumb) {
+        }
+        if (fourNumb < minimalNumb) {
             minimalNumb = fourNumb;
-        } else {
+        }
+        if (fiveNumb < minimalNumb) {
             minimalNumb = fiveNumb;
         }
 

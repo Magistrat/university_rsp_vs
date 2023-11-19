@@ -17,15 +17,15 @@ public class One {
 
     public static int getMinimalNumb(int oneNumb, int twoNumb, int threeNumb, int fourNumb){
         // Возвращает минимальное число
-        int minimalNumb;
+        int minimalNumb = oneNumb;
 
-        if (oneNumb <= twoNumb && oneNumb <= threeNumb && oneNumb <= fourNumb) {
-            minimalNumb = oneNumb;
-        } else if (twoNumb <= oneNumb && twoNumb <= threeNumb && twoNumb <= fourNumb) {
+        if (twoNumb < minimalNumb) {
             minimalNumb = twoNumb;
-        } else if (threeNumb <= oneNumb && threeNumb <= twoNumb && threeNumb <= fourNumb) {
+        }
+        if (threeNumb < minimalNumb) {
             minimalNumb = threeNumb;
-        } else {
+        }
+        if (fourNumb < minimalNumb) {
             minimalNumb = fourNumb;
         }
 

@@ -23,15 +23,15 @@ public class Two {
 
     public static int getMaxNumb(int oneNumb, int twoNumb, int threeNumb, int fourNumb){
         // Возвращает максимальное число
-        int maxNumb;
+        int maxNumb = oneNumb;
 
-        if (oneNumb >= twoNumb && oneNumb >= threeNumb && oneNumb >= fourNumb) {
-            maxNumb = oneNumb;
-        } else if (twoNumb >= oneNumb && twoNumb >= threeNumb && twoNumb >= fourNumb) {
+        if (twoNumb > maxNumb) {
             maxNumb = twoNumb;
-        } else if (threeNumb >= oneNumb && threeNumb >= twoNumb && threeNumb >= fourNumb) {
+        }
+        if (threeNumb > maxNumb) {
             maxNumb = threeNumb;
-        } else {
+        }
+        if (fourNumb > maxNumb) {
             maxNumb = fourNumb;
         }
 
@@ -43,7 +43,6 @@ public class Two {
         // Возвращает количество максимальных чисел (сколько раз максимальное число повторилось)
         // maxNumb: int - Максимальное число
         // oneNumb, ... : int - Перечисление чисел
-
         byte countOfMax = 0;
 
         if (maxNumb == oneNumb)
