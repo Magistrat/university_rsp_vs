@@ -16,7 +16,7 @@ public class One {
     }
 
     public static int getMinimalNumb(int one_numb, int two_numb, int three_numb, int four_numb){
-        // Получение минимального числа
+        // Возвращает минимальное число
         int minimal_numb;
 
         if (one_numb <= two_numb && one_numb <= three_numb && one_numb <= four_numb) {
