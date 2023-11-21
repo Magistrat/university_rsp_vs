@@ -12,8 +12,8 @@ public class One {
         int[][] arrayFiveOnSix = new int[5][6];
         Random random = new Random();
 
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 6; j++) {
+        for (int i = 0; i < arrayFiveOnSix.length; i++) {
+            for (int j = 0; j < arrayFiveOnSix[i].length; j++) {
                 arrayFiveOnSix[i][j] = random.nextInt(100);
             }
         }

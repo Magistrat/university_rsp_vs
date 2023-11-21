@@ -36,9 +36,9 @@ public class Two {
     }
 
     public static void printTripleMatrix(int[][] matrixForPrint){
-        // Метод для печати трехмерных матриц
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+        // Метод для печати матриц
+        for (int i = 0; i < matrixForPrint.length; i++) {
+            for (int j = 0; j < matrixForPrint[i].length; j++) {
                 System.out.print(matrixForPrint[i][j] + " ");
             }
             System.out.println();

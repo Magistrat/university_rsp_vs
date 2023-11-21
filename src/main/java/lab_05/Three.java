@@ -10,15 +10,15 @@ public class Three {
         int[][] matrixTriple = new int[3][3];
 
         Random random = new Random();
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+        for (int i = 0; i < matrixTriple.length; i++) {
+            for (int j = 0; j < matrixTriple[i].length; j++) {
                 matrixTriple[i][j] = random.nextInt(100);
             }
         }
 
         int sumOfEveryMatrixItem = 0;
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+        for (int i = 0; i < matrixTriple.length; i++) {
+            for (int j = 0; j < matrixTriple[i].length; j++) {
                 sumOfEveryMatrixItem += matrixTriple[i][j];
             }
         }
